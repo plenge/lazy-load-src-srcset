@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Lazyload</title>
+</head>
+<body>
+
+    <!-- Standard SRC -->
+    <img data-src="img/elva-fairy-800w.jpg" 
+         alt="Elva Fairy" 
+         class="lazyload"
+        >
+
+    <!-- SRCSET -->
+    <img data-srcset="img/elva-fairy-320w.jpg 320w, img/elva-fairy-480w.jpg 480w, img/elva-fairy-800w.jpg 800w" 
+         sizes="(max-width: 320px) 280px, (max-width: 480px) 440px, 800px"
+         data-src="img/elva-fairy-800w.jpg" 
+         alt="Elva Fairy"
+         class="lazyload"
+        >
+
+
+    <!-- LazyloadBG -->
+    <div class="lazyload-bg" 
+         data-src="img/elva-fairy-800w.jpg" 
+         style="width: 320px; height: 320px; background-position: center; background-size: cover"></div>
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+    <script src="scripts.js"></script>
+</body>
+</html>
